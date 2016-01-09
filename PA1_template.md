@@ -105,7 +105,7 @@ max(stepsPerDay$Total)
 hist(stepsPerDay$Total, main="Histogram of the total number of steps taken each day (NA excluded)", xlab="Total number of steps", col="green", breaks=seq(from=0, to=25000, by=1000))
 ```
 
-![](PA_1_files/figure-html/unnamed-chunk-5-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
 
 ### 2. Calculate and report the **mean** and **median** total number of steps taken per day
 
@@ -144,7 +144,7 @@ names(meanData) <- c("interval", "mean")
 plot(meanData$interval, meanData$mean, type="l", col="orange", xlab="Interval [minutes]", ylab="Number of steps", lwd=1, main="Time series of the average number of steps per intervals\n(NA excluded)")
 ```
 
-![](PA_1_files/figure-html/unnamed-chunk-7-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
 
 ### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -218,7 +218,7 @@ names(stepsPerDayWithReplace) <- c("date", "total")
 hist(stepsPerDayWithReplace$total, breaks=seq(from=0, to=25000, by=1000), col="red", ylim=c(0, 20), xlab="Total number of steps", main="Histogram of the total number of steps taken each day\n(NA changed to mean value)")
 ```
 
-![](PA_1_files/figure-html/unnamed-chunk-12-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-12-1.png) 
 
 Calculating mean and median values:
 
@@ -278,4 +278,4 @@ names(meanData) <- c("daytype", "interval", "mean")
 xyplot(mean ~ interval | daytype, meanData, type="l", lwd=1, xlab="Interval", ylab="Number of steps", col="violet", layout=c(1,2))
 ```
 
-![](PA_1_files/figure-html/unnamed-chunk-15-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-15-1.png) 
